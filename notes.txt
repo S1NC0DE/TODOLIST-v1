@@ -1,0 +1,31 @@
+modules.exports === just exports
+ex :
+module.exports.getDate === exports.getDate
+
+
+
+
+
+
+
+// initialise function is
+
+exports.(variable name that holds the function) = function()
+ex :
+exports.getDate = function () {
+    let today = new Date();
+    let options = {
+        weekday: "long",
+        day: "numeric",
+        month: "long"
+    }
+
+    let day = today.toLocaleDateString("en-US", options);
+    return day
+}
+
+
+// const MY_ARRAY = [];
+
+--> it is actually posssible to push new items intp the array
+
